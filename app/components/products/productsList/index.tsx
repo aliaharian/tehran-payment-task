@@ -25,14 +25,14 @@ export const ProductsList = ({ products }: ProductsListProps) => {
                 searchKey="title"
                 title="all products"
                 childComponent={ProductCard}
-                items={storedProducts.filter((item) => !selectedProducts.includes(item.id))}
+                items={storedProducts.filter((item:IProduct) => !selectedProducts.includes(item.id))}
                 handleClickItem={handleSelectProduct}
             />
             <ItemsListColumn<IProduct>
                 childComponent={ProductCard}
                 searchKey="title"
                 title="selected products"
-                items={storedProducts.filter((item) => selectedProducts.includes(item.id))}
+                items={storedProducts.filter((item:IProduct) => selectedProducts.includes(item.id))}
                 handleClickItem={handleUnselectProduct}
             />
         </>

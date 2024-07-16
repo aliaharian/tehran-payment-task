@@ -1,6 +1,4 @@
 import { UserCardProps } from "@/app/components/users/userCard/types"
-import Image from "next/image"
-
 
 export const UserCard = ({ data }: UserCardProps) => {
     return (

@@ -1,8 +1,6 @@
 import { useProductsStoreProps } from "@/app/stores/types";
 import { create } from "zustand";
 
-
-
 export const useProductsStore = create<useProductsStoreProps>((set) => ({
   products: [],
   selectedProducts: [],
